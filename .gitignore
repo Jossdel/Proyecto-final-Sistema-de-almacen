@@ -1,0 +1,22 @@
+# Archivos de VS
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Compilados
+/bin/
+/obj/
+*.exe
+*.pdb
+*.cache
+*.dll
+*.log
+.vs/
+*.db
+*.suo
+*.user
+*.cache
+bin/
+obj/
