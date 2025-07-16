@@ -28,13 +28,90 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mostrarProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(36, 36);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inicioToolStripMenuItem,
+            this.agregarProductosToolStripMenuItem,
+            this.mostrarProductoToolStripMenuItem,
+            this.exportarToolStripMenuItem,
+            this.salirToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1973, 47);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // inicioToolStripMenuItem
+            // 
+            this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
+            this.inicioToolStripMenuItem.Size = new System.Drawing.Size(103, 43);
+            this.inicioToolStripMenuItem.Text = "Inicio";
+            this.inicioToolStripMenuItem.Click += new System.EventHandler(this.inicioToolStripMenuItem_Click);
+            // 
+            // agregarProductosToolStripMenuItem
+            // 
+            this.agregarProductosToolStripMenuItem.Name = "agregarProductosToolStripMenuItem";
+            this.agregarProductosToolStripMenuItem.Size = new System.Drawing.Size(249, 43);
+            this.agregarProductosToolStripMenuItem.Text = "Agregar Producto";
+            this.agregarProductosToolStripMenuItem.Click += new System.EventHandler(this.agregarProductosToolStripMenuItem_Click);
+            // 
+            // mostrarProductoToolStripMenuItem
+            // 
+            this.mostrarProductoToolStripMenuItem.Name = "mostrarProductoToolStripMenuItem";
+            this.mostrarProductoToolStripMenuItem.Size = new System.Drawing.Size(246, 43);
+            this.mostrarProductoToolStripMenuItem.Text = "Mostrar Producto";
+            this.mostrarProductoToolStripMenuItem.Click += new System.EventHandler(this.mostrarProductoToolStripMenuItem_Click);
+            // 
+            // exportarToolStripMenuItem
+            // 
+            this.exportarToolStripMenuItem.Name = "exportarToolStripMenuItem";
+            this.exportarToolStripMenuItem.Size = new System.Drawing.Size(138, 43);
+            this.exportarToolStripMenuItem.Text = "Exportar";
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(90, 43);
+            this.salirToolStripMenuItem.Text = "Salir";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1973, 1154);
+            this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem agregarProductosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mostrarProductoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exportarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inicioToolStripMenuItem;
     }
 }
 
