@@ -61,5 +61,10 @@ namespace Sistema_De_Almacen
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = productos;
         }
+
+        private void MostrarProducto_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

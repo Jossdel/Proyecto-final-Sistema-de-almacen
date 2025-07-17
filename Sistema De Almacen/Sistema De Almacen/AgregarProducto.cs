@@ -72,5 +72,10 @@ namespace Sistema_De_Almacen
         private void Agregar_Producto_Load(object sender, EventArgs e)
         {
         }
+
+        private void lblPrecio_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
