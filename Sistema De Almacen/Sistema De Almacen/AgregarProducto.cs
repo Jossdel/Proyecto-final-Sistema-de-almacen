@@ -3,11 +3,11 @@ using System.Windows.Forms;
 
 namespace Sistema_De_Almacen
 {
-    public partial class Agregar_Producto : Form
+    public partial class AgregarProducto : Form
     {
         public Producto ProductoNuevo { get; private set; }
 
-        public Agregar_Producto()
+        public AgregarProducto()
         {
             InitializeComponent();
             this.txtPrecio.KeyPress += new KeyPressEventHandler(this.txtPrecio_KeyPress);
@@ -74,6 +74,16 @@ namespace Sistema_De_Almacen
         }
 
         private void lblPrecio_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
