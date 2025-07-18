@@ -11,15 +11,31 @@ namespace Sistema_De_Almacen
         {
             InitializeComponent();
 
-            // Eventos adicionales
+            // Cargar necesidades al combo
+            cmbNecesidad.Items.AddRange(new string[] { "Primera", "Segunda", "Tercera" });
+
+            // Eventos
+            this.Load += new EventHandler(this.AgregarProducto_Load);
             this.txtPrecio.KeyPress += new KeyPressEventHandler(this.txtPrecio_KeyPress);
             this.txtPrecio.TextChanged += new EventHandler(this.txtPrecio_TextChanged);
             this.cmbNecesidad.SelectedIndexChanged += new EventHandler(this.cmbNecesidad_SelectedIndexChanged);
         }
 
+        // Genera un ID como PRD-1234
+        private string GenerarID()
+        {
+            Random rnd = new Random();
+            int numero = rnd.Next(1000, 9999);
+            return $"PRD-{numero}";
+        }
+
+        private void AgregarProducto_Load(object sender, EventArgs e)
+        {
+            txtID.Text = GenerarID();
+        }
+
         private void txtPrecio_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // Solo permite números, backspace y punto decimal
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
             {
                 e.Handled = true;
@@ -74,7 +90,6 @@ namespace Sistema_De_Almacen
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            // Validaciones básicas
             if (string.IsNullOrWhiteSpace(txtID.Text) ||
                 string.IsNullOrWhiteSpace(txtNombre.Text) ||
                 string.IsNullOrWhiteSpace(txtCategoria.Text) ||
@@ -85,10 +100,11 @@ namespace Sistema_De_Almacen
                 return;
             }
 
-            // Verificar ID único
+            // Verificar que el ID no se repita
             if (FrmPrincipal.listaProductos.Any(p => p.ID == txtID.Text))
             {
-                MessageBox.Show("El ID ya existe. Use uno diferente.");
+                MessageBox.Show("El ID ya existe. Se generará otro automáticamente.");
+                txtID.Text = GenerarID();
                 return;
             }
 
@@ -96,7 +112,6 @@ namespace Sistema_De_Almacen
             int minima = (int)nudMinima.Value;
             string estado = CalcularEstado(cantidad, minima);
 
-            // Crear producto
             var producto = new Producto
             {
                 ID = txtID.Text,
@@ -119,11 +134,10 @@ namespace Sistema_De_Almacen
 
         private void LimpiarCampos()
         {
-            txtID.Clear();
+            txtID.Text = GenerarID();
             txtNombre.Clear();
             txtCategoria.Clear();
             cmbNecesidad.SelectedIndex = -1;
-            nudMinima.Value = 0;
             nudMinima.Value = 0;
             txtPrecio.Clear();
             txtITBIS.Clear();

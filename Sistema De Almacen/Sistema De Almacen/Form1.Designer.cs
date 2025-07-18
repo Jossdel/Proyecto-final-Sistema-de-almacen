@@ -31,10 +31,10 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.agregarProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mostrarProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualizarProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.actualizarProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,28 +58,23 @@
             // agregarProductosToolStripMenuItem
             // 
             this.agregarProductosToolStripMenuItem.Name = "agregarProductosToolStripMenuItem";
-            this.agregarProductosToolStripMenuItem.Size = new System.Drawing.Size(249, 41);
+            this.agregarProductosToolStripMenuItem.Size = new System.Drawing.Size(249, 43);
             this.agregarProductosToolStripMenuItem.Text = "Agregar Producto";
             this.agregarProductosToolStripMenuItem.Click += new System.EventHandler(this.agregarProductosToolStripMenuItem_Click);
             // 
             // mostrarProductoToolStripMenuItem
             // 
             this.mostrarProductoToolStripMenuItem.Name = "mostrarProductoToolStripMenuItem";
-            this.mostrarProductoToolStripMenuItem.Size = new System.Drawing.Size(246, 41);
+            this.mostrarProductoToolStripMenuItem.Size = new System.Drawing.Size(246, 43);
             this.mostrarProductoToolStripMenuItem.Text = "Mostrar Producto";
-
+            this.mostrarProductoToolStripMenuItem.Click += new System.EventHandler(this.mostrarProductoToolStripMenuItem_Click);
             // 
-            // exportarToolStripMenuItem
+            // actualizarProductoToolStripMenuItem
             // 
-            this.exportarToolStripMenuItem.Name = "exportarToolStripMenuItem";
-            this.exportarToolStripMenuItem.Size = new System.Drawing.Size(138, 41);
-            this.exportarToolStripMenuItem.Text = "Exportar";
-            // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(90, 41);
-            this.salirToolStripMenuItem.Text = "Salir";
+            this.actualizarProductoToolStripMenuItem.Name = "actualizarProductoToolStripMenuItem";
+            this.actualizarProductoToolStripMenuItem.Size = new System.Drawing.Size(270, 43);
+            this.actualizarProductoToolStripMenuItem.Text = "Actualizar Producto";
+            this.actualizarProductoToolStripMenuItem.Click += new System.EventHandler(this.actualizarProductoToolStripMenuItem_Click);
             // 
             // eliminarProductoToolStripMenuItem
             // 
@@ -88,12 +83,17 @@
             this.eliminarProductoToolStripMenuItem.Text = "Eliminar Producto";
             this.eliminarProductoToolStripMenuItem.Click += new System.EventHandler(this.eliminarProductoToolStripMenuItem_Click);
             // 
-            // actualizarProductoToolStripMenuItem
+            // exportarToolStripMenuItem
             // 
-            this.actualizarProductoToolStripMenuItem.Name = "actualizarProductoToolStripMenuItem";
-            this.actualizarProductoToolStripMenuItem.Size = new System.Drawing.Size(270, 43);
-            this.actualizarProductoToolStripMenuItem.Text = "Actualizar Producto";
-            this.actualizarProductoToolStripMenuItem.Click += new System.EventHandler(this.actualizarProductoToolStripMenuItem_Click);
+            this.exportarToolStripMenuItem.Name = "exportarToolStripMenuItem";
+            this.exportarToolStripMenuItem.Size = new System.Drawing.Size(138, 43);
+            this.exportarToolStripMenuItem.Text = "Exportar";
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(90, 43);
+            this.salirToolStripMenuItem.Text = "Salir";
             // 
             // FrmPrincipal
             // 

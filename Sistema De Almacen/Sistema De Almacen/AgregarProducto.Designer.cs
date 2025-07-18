@@ -105,10 +105,10 @@ namespace Sistema_De_Almacen
             this.btnGuardar.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.Image = global::Sistema_De_Almacen.Properties.Resources.disk__1_;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGuardar.Location = new System.Drawing.Point(441, 877);
+            this.btnGuardar.Location = new System.Drawing.Point(455, 661);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(355, 80);
+            this.btnGuardar.Size = new System.Drawing.Size(598, 129);
             this.btnGuardar.TabIndex = 4;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;

@@ -36,15 +36,6 @@ namespace Sistema_De_Almacen
         }
 
 
-
-   
-
-     
-
-       
-
-
-
         private void actualizarProductoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ActualizarProducto frm = new ActualizarProducto();
@@ -59,6 +50,13 @@ namespace Sistema_De_Almacen
             frm.MdiParent = this; // Lo hace hijo del MDI
             frm.Show();
 
+        }
+
+        private void mostrarProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MostrarProducto frm = new MostrarProducto();
+            frm.MdiParent = this;
+            frm.Show();
         }
     }
 }
