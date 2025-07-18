@@ -35,7 +35,6 @@ namespace Sistema_De_Almacen
         private TextBox txtNombre;
         private TextBox txtPrecio;
         private Button btnGuardar;
-        private Button btnAgregarProducto;
         private Label lblNombre;
         private Label lblPrecio;
 
@@ -46,17 +45,18 @@ namespace Sistema_De_Almacen
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblPrecio = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnAgregarProducto = new System.Windows.Forms.Button();
             this.lblEstado = new System.Windows.Forms.Label();
-            this.lblCantidad = new System.Windows.Forms.Label();
+            this.lblITBIS = new System.Windows.Forms.Label();
             this.lblNecesidad = new System.Windows.Forms.Label();
             this.lblCategoria = new System.Windows.Forms.Label();
             this.lblID = new System.Windows.Forms.Label();
-            this.lblITBIS = new System.Windows.Forms.TextBox();
+            this.txtITBIS = new System.Windows.Forms.TextBox();
             this.txtCategoria = new System.Windows.Forms.TextBox();
             this.txtID = new System.Windows.Forms.TextBox();
             this.cmbNecesidad = new System.Windows.Forms.ComboBox();
             this.txtEstado = new System.Windows.Forms.TextBox();
+            this.nudMinima = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.nudMinima)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNombre
@@ -74,6 +74,7 @@ namespace Sistema_De_Almacen
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(378, 35);
             this.txtPrecio.TabIndex = 3;
+            this.txtPrecio.TextChanged += new System.EventHandler(this.txtPrecio_TextChanged);
             // 
             // lblNombre
             // 
@@ -94,7 +95,6 @@ namespace Sistema_De_Almacen
             this.lblPrecio.Size = new System.Drawing.Size(89, 29);
             this.lblPrecio.TabIndex = 2;
             this.lblPrecio.Text = "Precio:";
-            this.lblPrecio.Click += new System.EventHandler(this.lblPrecio_Click);
             // 
             // btnGuardar
             // 
@@ -114,40 +114,23 @@ namespace Sistema_De_Almacen
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // btnAgregarProducto
-            // 
-            this.btnAgregarProducto.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btnAgregarProducto.FlatAppearance.BorderColor = System.Drawing.Color.AliceBlue;
-            this.btnAgregarProducto.FlatAppearance.BorderSize = 3;
-            this.btnAgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarProducto.Image = global::Sistema_De_Almacen.Properties.Resources.add;
-            this.btnAgregarProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAgregarProducto.Location = new System.Drawing.Point(930, 868);
-            this.btnAgregarProducto.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.btnAgregarProducto.Name = "btnAgregarProducto";
-            this.btnAgregarProducto.Size = new System.Drawing.Size(352, 80);
-            this.btnAgregarProducto.TabIndex = 5;
-            this.btnAgregarProducto.Text = "     Agregar Producto";
-            this.btnAgregarProducto.UseVisualStyleBackColor = false;
-            this.btnAgregarProducto.Click += new System.EventHandler(this.btnAgregarProducto_Click);
-            // 
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
-            this.lblEstado.Location = new System.Drawing.Point(436, 437);
+            this.lblEstado.Location = new System.Drawing.Point(436, 489);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(88, 29);
             this.lblEstado.TabIndex = 8;
             this.lblEstado.Text = "Estado";
             // 
-            // lblCantidad
+            // lblITBIS
             // 
-            this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Location = new System.Drawing.Point(398, 377);
-            this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(73, 29);
-            this.lblCantidad.TabIndex = 9;
-            this.lblCantidad.Text = "ITBIS";
+            this.lblITBIS.AutoSize = true;
+            this.lblITBIS.Location = new System.Drawing.Point(398, 377);
+            this.lblITBIS.Name = "lblITBIS";
+            this.lblITBIS.Size = new System.Drawing.Size(73, 29);
+            this.lblITBIS.TabIndex = 9;
+            this.lblITBIS.Text = "ITBIS";
             // 
             // lblNecesidad
             // 
@@ -176,12 +159,12 @@ namespace Sistema_De_Almacen
             this.lblID.TabIndex = 13;
             this.lblID.Text = "ID del producto";
             // 
-            // lblITBIS
+            // txtITBIS
             // 
-            this.lblITBIS.Location = new System.Drawing.Point(575, 371);
-            this.lblITBIS.Name = "lblITBIS";
-            this.lblITBIS.Size = new System.Drawing.Size(378, 35);
-            this.lblITBIS.TabIndex = 14;
+            this.txtITBIS.Location = new System.Drawing.Point(575, 371);
+            this.txtITBIS.Name = "txtITBIS";
+            this.txtITBIS.Size = new System.Drawing.Size(378, 35);
+            this.txtITBIS.TabIndex = 14;
             // 
             // txtCategoria
             // 
@@ -189,7 +172,6 @@ namespace Sistema_De_Almacen
             this.txtCategoria.Name = "txtCategoria";
             this.txtCategoria.Size = new System.Drawing.Size(378, 35);
             this.txtCategoria.TabIndex = 16;
-            this.txtCategoria.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // txtID
             // 
@@ -205,53 +187,62 @@ namespace Sistema_De_Almacen
             this.cmbNecesidad.Name = "cmbNecesidad";
             this.cmbNecesidad.Size = new System.Drawing.Size(378, 37);
             this.cmbNecesidad.TabIndex = 18;
+            this.cmbNecesidad.SelectedIndexChanged += new System.EventHandler(this.cmbNecesidad_SelectedIndexChanged);
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(589, 437);
+            this.txtEstado.Location = new System.Drawing.Point(575, 489);
             this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(364, 35);
+            this.txtEstado.Size = new System.Drawing.Size(378, 35);
             this.txtEstado.TabIndex = 19;
+            // 
+            // nudMinima
+            // 
+            this.nudMinima.Location = new System.Drawing.Point(575, 433);
+            this.nudMinima.Name = "nudMinima";
+            this.nudMinima.Size = new System.Drawing.Size(378, 35);
+            this.nudMinima.TabIndex = 20;
             // 
             // AgregarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1575, 1008);
+            this.Controls.Add(this.nudMinima);
             this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.cmbNecesidad);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.txtCategoria);
-            this.Controls.Add(this.lblITBIS);
+            this.Controls.Add(this.txtITBIS);
             this.Controls.Add(this.lblID);
             this.Controls.Add(this.lblCategoria);
             this.Controls.Add(this.lblNecesidad);
-            this.Controls.Add(this.lblCantidad);
+            this.Controls.Add(this.lblITBIS);
             this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblPrecio);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.btnAgregarProducto);
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "AgregarProducto";
             this.Text = "Agregar Producto";
-            this.Load += new System.EventHandler(this.Agregar_Producto_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.nudMinima)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
         private Label lblEstado;
-        private Label lblCantidad;
+        private Label lblITBIS;
         private Label lblNecesidad;
         private Label lblCategoria;
         private Label lblID;
-        private TextBox lblITBIS;
+        private TextBox txtITBIS;
         private TextBox txtCategoria;
         private TextBox txtID;
         private ComboBox cmbNecesidad;
         private TextBox txtEstado;
+        private NumericUpDown nudMinima;
     }
 }
 

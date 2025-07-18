@@ -16,8 +16,9 @@ namespace Sistema_De_Almacen
         {
             InitializeComponent();
         }
-     
-        List<Producto> productos = new List<Producto>();
+
+        public static List<Producto> listaProductos = new List<Producto>();
+
         int contadorId = 1;
 
         private void Form1_Load(object sender, EventArgs e)
@@ -38,23 +39,11 @@ namespace Sistema_De_Almacen
 
    
 
-        private void btnMostrarProducto_Click(object sender, EventArgs e)
-        {
-            var form = new MostrarProducto(productos);
-            form.ShowDialog();
-        }
+     
 
-        private void mostrarProductoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MostrarProducto form = new MostrarProducto(productos);
-            form.MdiParent = this;
-            form.Show();
-        }
+       
 
-        private void inicioToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void actualizarProductoToolStripMenuItem_Click(object sender, EventArgs e)
         {

@@ -67,7 +67,7 @@
             this.mostrarProductoToolStripMenuItem.Name = "mostrarProductoToolStripMenuItem";
             this.mostrarProductoToolStripMenuItem.Size = new System.Drawing.Size(246, 41);
             this.mostrarProductoToolStripMenuItem.Text = "Mostrar Producto";
-            this.mostrarProductoToolStripMenuItem.Click += new System.EventHandler(this.mostrarProductoToolStripMenuItem_Click);
+
             // 
             // exportarToolStripMenuItem
             // 
