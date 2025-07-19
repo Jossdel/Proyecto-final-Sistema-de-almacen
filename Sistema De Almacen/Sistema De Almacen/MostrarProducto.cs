@@ -14,7 +14,8 @@ namespace Sistema_De_Almacen
 
         private void MostrarProducto_Load(object sender, EventArgs e)
         {
-            // Carga la lista de productos al DataGridView
+            // Carga la lista de productos al DataGri
+            // dView
             dgvProductos.DataSource = null;
             dgvProductos.DataSource = FrmPrincipal.listaProductos;
         }

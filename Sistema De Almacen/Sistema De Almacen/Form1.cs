@@ -32,6 +32,7 @@ namespace Sistema_De_Almacen
 
             AgregarProducto form = new AgregarProducto();
             form.MdiParent = this;
+            form.WindowState = FormWindowState.Maximized; // Muy importante
             form.Show();
         }
 
@@ -40,6 +41,7 @@ namespace Sistema_De_Almacen
         {
             ActualizarProducto frm = new ActualizarProducto();
             frm.MdiParent = this; // Lo hace hijo del MDI
+            frm.WindowState = FormWindowState.Maximized; // Muy importante
             frm.Show();
 
         }
@@ -48,6 +50,7 @@ namespace Sistema_De_Almacen
         {
             EliminarProducto frm = new EliminarProducto();
             frm.MdiParent = this; // Lo hace hijo del MDI
+            frm.WindowState = FormWindowState.Maximized; // Muy importante
             frm.Show();
 
         }
@@ -56,7 +59,14 @@ namespace Sistema_De_Almacen
         {
             MostrarProducto frm = new MostrarProducto();
             frm.MdiParent = this;
+            frm.WindowState = FormWindowState.Maximized; // Muy importante
             frm.Show();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Salir salirForm = new Salir();
+            salirForm.ShowDialog(); // Se abre el formulario "Salir" como emergente (modal)
         }
     }
 }

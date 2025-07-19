@@ -26,23 +26,10 @@ namespace Sistema_De_Almacen
             txtCategoria.TextChanged += TextBox_TextChanged;
             txtPrecio.TextChanged += TextBox_TextChanged;
 
-            // Cargar opciones en ComboBox
-            cmbNecesidad.Items.AddRange(new string[] { "Primera", "Segunda", "Tercera" });
-
-            // Eventos originales
-            this.Load += AgregarProducto_Load;
-            txtPrecio.KeyPress += txtPrecio_KeyPress;
-            txtPrecio.TextChanged += txtPrecio_TextChanged;
-            cmbNecesidad.SelectedIndexChanged += cmbNecesidad_SelectedIndexChanged;
+     
 
 
 
-            // Eventos existentes
-            cmbNecesidad.Items.AddRange(new string[] { "Primera", "Segunda", "Tercera" });
-            this.Load += new EventHandler(this.AgregarProducto_Load);
-            this.txtPrecio.KeyPress += new KeyPressEventHandler(this.txtPrecio_KeyPress);
-            this.txtPrecio.TextChanged += new EventHandler(this.txtPrecio_TextChanged);
-            this.cmbNecesidad.SelectedIndexChanged += new EventHandler(this.cmbNecesidad_SelectedIndexChanged);
 
             // Cargar necesidades al combo
             cmbNecesidad.Items.AddRange(new string[] { "Primera", "Segunda", "Tercera" });
@@ -105,7 +92,7 @@ namespace Sistema_De_Almacen
         {
             Random rnd = new Random();
             int numero = rnd.Next(1000, 9999);
-            return $"PRD-{numero}";
+            return $"ID-{numero}";
         }
 
         private void AgregarProducto_Load(object sender, EventArgs e)
