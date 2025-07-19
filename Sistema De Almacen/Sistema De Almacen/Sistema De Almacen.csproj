@@ -132,5 +132,20 @@
   <ItemGroup>
     <None Include="Resources\add.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\price-tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blockchain-app.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\demencia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id-del-paciente.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

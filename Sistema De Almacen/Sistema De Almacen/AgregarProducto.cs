@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -7,9 +8,41 @@ namespace Sistema_De_Almacen
 {
     public partial class AgregarProducto : Form
     {
+        private System.Windows.Forms.Timer pulsarTimer;
+        private float escalaActual = 1.0f;
+        private bool aumentando = true;
+        private Size tamañoOriginal;
         public AgregarProducto()
         {
             InitializeComponent();
+
+            // Inicializar Timer para animación
+            pulsarTimer = new System.Windows.Forms.Timer { Interval = 50 };
+            pulsarTimer.Tick += PulsarTimer_Tick;
+            tamañoOriginal = btnGuardar.Size;
+
+            // Eventos TextChanged para activar animación
+            txtNombre.TextChanged += TextBox_TextChanged;
+            txtCategoria.TextChanged += TextBox_TextChanged;
+            txtPrecio.TextChanged += TextBox_TextChanged;
+
+            // Cargar opciones en ComboBox
+            cmbNecesidad.Items.AddRange(new string[] { "Primera", "Segunda", "Tercera" });
+
+            // Eventos originales
+            this.Load += AgregarProducto_Load;
+            txtPrecio.KeyPress += txtPrecio_KeyPress;
+            txtPrecio.TextChanged += txtPrecio_TextChanged;
+            cmbNecesidad.SelectedIndexChanged += cmbNecesidad_SelectedIndexChanged;
+
+
+
+            // Eventos existentes
+            cmbNecesidad.Items.AddRange(new string[] { "Primera", "Segunda", "Tercera" });
+            this.Load += new EventHandler(this.AgregarProducto_Load);
+            this.txtPrecio.KeyPress += new KeyPressEventHandler(this.txtPrecio_KeyPress);
+            this.txtPrecio.TextChanged += new EventHandler(this.txtPrecio_TextChanged);
+            this.cmbNecesidad.SelectedIndexChanged += new EventHandler(this.cmbNecesidad_SelectedIndexChanged);
 
             // Cargar necesidades al combo
             cmbNecesidad.Items.AddRange(new string[] { "Primera", "Segunda", "Tercera" });
@@ -19,6 +52,52 @@ namespace Sistema_De_Almacen
             this.txtPrecio.KeyPress += new KeyPressEventHandler(this.txtPrecio_KeyPress);
             this.txtPrecio.TextChanged += new EventHandler(this.txtPrecio_TextChanged);
             this.cmbNecesidad.SelectedIndexChanged += new EventHandler(this.cmbNecesidad_SelectedIndexChanged);
+        }
+
+        private void PulsarTimer_Tick(object sender, EventArgs e)
+        {
+            float paso = 0.05f;
+
+            if (aumentando)
+            {
+                escalaActual += paso;
+                if (escalaActual >= 1.2f)
+                    aumentando = false;
+            }
+            else
+            {
+                escalaActual -= paso;
+                if (escalaActual <= 1.0f)
+                    aumentando = true;
+            }
+
+            btnGuardar.Size = new Size(
+                (int)(tamañoOriginal.Width * escalaActual),
+                (int)(tamañoOriginal.Height * escalaActual)
+            );
+        }
+
+        private void TextBox_TextChanged(object sender, EventArgs e)
+        {
+
+            if (HayTextoEnCamposObligatorios())
+            {
+                pulsarTimer.Start();
+            }
+            else
+            {
+                pulsarTimer.Stop();
+                escalaActual = 1.0f;
+                aumentando = true;
+                btnGuardar.Size = tamañoOriginal;
+            }
+        }
+
+        private bool HayTextoEnCamposObligatorios()
+        {
+            return !string.IsNullOrWhiteSpace(txtNombre.Text) ||
+                 !string.IsNullOrWhiteSpace(txtCategoria.Text) ||
+                 !string.IsNullOrWhiteSpace(txtPrecio.Text);
         }
 
         // Genera un ID como PRD-1234
@@ -142,6 +221,21 @@ namespace Sistema_De_Almacen
             txtPrecio.Clear();
             txtITBIS.Clear();
             txtEstado.Clear();
+        }
+
+        private void AgregarProducto_Load_1(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void lblCategoria_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblID_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
