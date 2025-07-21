@@ -95,10 +95,32 @@ namespace Sistema_De_Almacen
             return $"ID-{numero}";
         }
 
-        private void AgregarProducto_Load(object sender, EventArgs e)
-        {
-            txtID.Text = GenerarID();
-        }
+      private void AgregarProducto_Load(object sender, EventArgs e)
+{
+    txtID.Text = GenerarID();
+
+    // CENTRAR texto en los TextBox
+    txtID.TextAlign = HorizontalAlignment.Center;
+    txtNombre.TextAlign = HorizontalAlignment.Center;
+    txtCategoria.TextAlign = HorizontalAlignment.Center;
+    txtPrecio.TextAlign = HorizontalAlignment.Center;
+    txtITBIS.TextAlign = HorizontalAlignment.Center;
+    txtEstado.TextAlign = HorizontalAlignment.Center;
+
+    // AUMENTAR TAMAÑO de fuente
+    Font fuenteGrande = new Font("Segoe UI", 14, FontStyle.Regular);
+
+    txtID.Font = fuenteGrande;
+    txtNombre.Font = fuenteGrande;
+    txtCategoria.Font = fuenteGrande;
+    txtPrecio.Font = fuenteGrande;
+    txtITBIS.Font = fuenteGrande;
+    txtEstado.Font = fuenteGrande;
+
+
+  
+}
+
 
         private void txtPrecio_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -178,6 +200,11 @@ namespace Sistema_De_Almacen
             int cantidad = (int)nudCantidad.Value;
             int minima = (int)nudMinima.Value;
             string estado = CalcularEstado(cantidad, minima);
+            if (minima < 0)
+            {
+                MessageBox.Show("La cantidad mínima no puede ser negativa.", "Cantidad mínima inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
             var producto = new Producto
             {
@@ -222,6 +249,51 @@ namespace Sistema_De_Almacen
         }
 
         private void lblITBIS_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEstado_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCantidad_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblEstado_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCategoria_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblID_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNombre_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPrecio_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nudMinima_ValueChanged(object sender, EventArgs e)
         {
 
         }

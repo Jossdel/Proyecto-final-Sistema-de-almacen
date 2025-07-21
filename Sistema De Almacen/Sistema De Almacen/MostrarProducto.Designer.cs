@@ -35,8 +35,10 @@
             // dgvProductos
             // 
             this.dgvProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvProductos.BackgroundColor = System.Drawing.SystemColors.Info;
             this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProductos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvProductos.GridColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dgvProductos.Location = new System.Drawing.Point(0, 0);
             this.dgvProductos.Margin = new System.Windows.Forms.Padding(2);
             this.dgvProductos.Name = "dgvProductos";
