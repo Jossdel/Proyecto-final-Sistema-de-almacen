@@ -150,6 +150,8 @@ namespace Sistema_De_Almacen
                 return "Sin existencia";
             else if (cantidad <= minima)
                 return "Próximo a terminar";
+            else if (cantidad >= minima) 
+                return "Suficiente";
             else
                 return "Disponible";
         }
@@ -221,6 +223,16 @@ namespace Sistema_De_Almacen
         }
 
         private void lblID_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nudMinima_ValueChanged(object sender, EventArgs e)
         {
 
         }
