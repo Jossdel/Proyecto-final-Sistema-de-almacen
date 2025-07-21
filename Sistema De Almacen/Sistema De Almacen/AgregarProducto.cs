@@ -150,10 +150,9 @@ namespace Sistema_De_Almacen
                 return "Sin existencia";
             else if (cantidad <= minima)
                 return "Próximo a terminar";
-            else if (cantidad >= minima) 
-                return "Suficiente";
+            
             else
-                return "Disponible";
+                return "Suficiente";
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -176,7 +175,7 @@ namespace Sistema_De_Almacen
                 return;
             }
 
-            int cantidad = (int)nudMinima.Value;
+            int cantidad = (int)nudCantidad.Value;
             int minima = (int)nudMinima.Value;
             string estado = CalcularEstado(cantidad, minima);
 
@@ -212,27 +211,17 @@ namespace Sistema_De_Almacen
             txtEstado.Clear();
         }
 
-        private void AgregarProducto_Load_1(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void lblCategoria_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void lblID_Click(object sender, EventArgs e)
+        private void lblNecesidad_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void nudMinima_ValueChanged(object sender, EventArgs e)
+        private void lblITBIS_Click(object sender, EventArgs e)
         {
 
         }
