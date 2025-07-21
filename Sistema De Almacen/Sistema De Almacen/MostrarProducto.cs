@@ -26,5 +26,7 @@ namespace Sistema_De_Almacen
         {
             this.Close();
         }
+
+  
     }
 }

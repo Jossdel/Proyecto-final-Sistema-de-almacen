@@ -57,6 +57,7 @@
             // 
             // txtID
             // 
+            this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtID.Location = new System.Drawing.Point(820, 128);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(424, 35);
@@ -74,9 +75,11 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(868, 415);
+            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNombre.Location = new System.Drawing.Point(852, 415);
             this.txtNombre.Multiline = true;
             this.txtNombre.Name = "txtNombre";
+            this.txtNombre.ReadOnly = true;
             this.txtNombre.Size = new System.Drawing.Size(556, 64);
             this.txtNombre.TabIndex = 5;
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);

@@ -251,10 +251,10 @@ namespace Sistema_De_Almacen
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.btnGuardar.Image = global::Sistema_De_Almacen.Properties.Resources.disk__1_;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGuardar.Location = new System.Drawing.Point(801, 848);
+            this.btnGuardar.Location = new System.Drawing.Point(829, 841);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(444, 124);
+            this.btnGuardar.Size = new System.Drawing.Size(403, 124);
             this.btnGuardar.TabIndex = 4;
             this.btnGuardar.Text = "      Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -318,6 +318,7 @@ namespace Sistema_De_Almacen
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "AgregarProducto";
             this.Text = "Agregar Producto";
+            this.Load += new System.EventHandler(this.AgregarProducto_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.nudMinima)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).EndInit();
             this.ResumeLayout(false);

@@ -207,7 +207,7 @@ namespace Sistema_De_Almacen
             }
             if (cantidad < minima)
             {
-                MessageBox.Show("La cantidad  no puede ser menor a las cantidad minima.", "Cantidad  inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("La cantidad  no puede ser menor a las cantidad minima.", "Cantidad inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -299,6 +299,11 @@ namespace Sistema_De_Almacen
         }
 
         private void nudMinima_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AgregarProducto_Load_1(object sender, EventArgs e)
         {
 
         }

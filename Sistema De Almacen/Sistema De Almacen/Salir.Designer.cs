@@ -35,6 +35,7 @@
             // btnAceptar
             // 
             this.btnAceptar.BackColor = System.Drawing.Color.LawnGreen;
+            this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAceptar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnAceptar.Location = new System.Drawing.Point(61, 179);
@@ -48,6 +49,7 @@
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.Red;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnCancelar.Location = new System.Drawing.Point(510, 179);

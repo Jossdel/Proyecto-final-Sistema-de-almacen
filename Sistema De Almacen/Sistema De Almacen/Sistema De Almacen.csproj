@@ -91,6 +91,9 @@
     <Compile Include="Salir.Designer.cs">
       <DependentUpon>Salir.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ActualizarProducto.resx">
+      <DependentUpon>ActualizarProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AgregarProducto.resx">
       <DependentUpon>AgregarProducto.cs</DependentUpon>
     </EmbeddedResource>
