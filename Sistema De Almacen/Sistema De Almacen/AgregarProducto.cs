@@ -205,6 +205,11 @@ namespace Sistema_De_Almacen
                 MessageBox.Show("La cantidad mínima no puede ser negativa.", "Cantidad mínima inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            if (cantidad < minima)
+            {
+                MessageBox.Show("La cantidad  no puede ser menor a las cantidad minima.", "Cantidad  inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
             var producto = new Producto
             {

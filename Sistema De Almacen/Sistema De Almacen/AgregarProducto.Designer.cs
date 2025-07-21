@@ -294,6 +294,7 @@ namespace Sistema_De_Almacen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(2113, 1059);
             this.Controls.Add(this.lblCantidadMin);
             this.Controls.Add(this.nudCantidad);
