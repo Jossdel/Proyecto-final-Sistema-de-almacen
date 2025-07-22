@@ -44,6 +44,7 @@
             this.cmbNecesidad = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.nudMinima = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudMinima)).BeginInit();
             this.SuspendLayout();
@@ -66,7 +67,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(1537, 71);
+            this.btnBuscar.Location = new System.Drawing.Point(1532, 74);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(314, 57);
             this.btnBuscar.TabIndex = 2;
@@ -77,7 +78,7 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(470, 193);
+            this.lblNombre.Location = new System.Drawing.Point(494, 193);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(253, 29);
             this.lblNombre.TabIndex = 3;
@@ -85,7 +86,7 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(745, 187);
+            this.txtNombre.Location = new System.Drawing.Point(760, 187);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(636, 35);
             this.txtNombre.TabIndex = 4;
@@ -93,7 +94,7 @@
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Location = new System.Drawing.Point(501, 297);
+            this.lblPrecio.Location = new System.Drawing.Point(612, 291);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(89, 29);
             this.lblPrecio.TabIndex = 5;
@@ -101,7 +102,7 @@
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(745, 291);
+            this.txtPrecio.Location = new System.Drawing.Point(760, 291);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(636, 35);
             this.txtPrecio.TabIndex = 6;
@@ -109,7 +110,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(491, 626);
+            this.label1.Location = new System.Drawing.Point(681, 608);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(115, 29);
             this.label1.TabIndex = 7;
@@ -117,7 +118,7 @@
             // 
             // nudCantidad
             // 
-            this.nudCantidad.Location = new System.Drawing.Point(639, 624);
+            this.nudCantidad.Location = new System.Drawing.Point(829, 606);
             this.nudCantidad.Name = "nudCantidad";
             this.nudCantidad.Size = new System.Drawing.Size(120, 35);
             this.nudCantidad.TabIndex = 8;
@@ -145,7 +146,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(506, 406);
+            this.label2.Location = new System.Drawing.Point(588, 376);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(124, 29);
             this.label2.TabIndex = 11;
@@ -153,7 +154,7 @@
             // 
             // txtCategoria
             // 
-            this.txtCategoria.Location = new System.Drawing.Point(745, 400);
+            this.txtCategoria.Location = new System.Drawing.Point(760, 376);
             this.txtCategoria.Name = "txtCategoria";
             this.txtCategoria.Size = new System.Drawing.Size(636, 35);
             this.txtCategoria.TabIndex = 12;
@@ -161,7 +162,7 @@
             // cmbNecesidad
             // 
             this.cmbNecesidad.FormattingEnabled = true;
-            this.cmbNecesidad.Location = new System.Drawing.Point(745, 471);
+            this.cmbNecesidad.Location = new System.Drawing.Point(760, 471);
             this.cmbNecesidad.Name = "cmbNecesidad";
             this.cmbNecesidad.Size = new System.Drawing.Size(636, 37);
             this.cmbNecesidad.TabIndex = 13;
@@ -169,7 +170,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(543, 471);
+            this.label3.Location = new System.Drawing.Point(588, 474);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(136, 29);
             this.label3.TabIndex = 14;
@@ -177,16 +178,27 @@
             // 
             // nudMinima
             // 
-            this.nudMinima.Location = new System.Drawing.Point(1041, 636);
+            this.nudMinima.Location = new System.Drawing.Point(1261, 606);
             this.nudMinima.Name = "nudMinima";
             this.nudMinima.Size = new System.Drawing.Size(120, 35);
             this.nudMinima.TabIndex = 15;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(1029, 608);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(199, 29);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Cantidad MInima:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // ActualizarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2209, 1100);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.nudMinima);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmbNecesidad);
@@ -231,5 +243,6 @@
         private System.Windows.Forms.ComboBox cmbNecesidad;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NumericUpDown nudMinima;
+        private System.Windows.Forms.Label label4;
     }
 }
