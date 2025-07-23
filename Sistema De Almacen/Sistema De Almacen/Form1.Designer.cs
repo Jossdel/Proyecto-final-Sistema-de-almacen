@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panelSidebar = new System.Windows.Forms.Panel();
-            this.pnlContenedor = new System.Windows.Forms.Panel();
             this.btnEliminarProducto = new System.Windows.Forms.Button();
             this.btnMostrarProductos = new System.Windows.Forms.Button();
             this.btnAgregarproductos = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnExportarDatos = new System.Windows.Forms.Button();
             this.btnActualizarProducto = new System.Windows.Forms.Button();
+            this.pnlContenedor = new System.Windows.Forms.Panel();
             this.panelSidebar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,17 +54,6 @@
             this.panelSidebar.Name = "panelSidebar";
             this.panelSidebar.Size = new System.Drawing.Size(128, 622);
             this.panelSidebar.TabIndex = 3;
-            // 
-            // pnlContenedor
-            // 
-            this.pnlContenedor.BackgroundImage = global::Sistema_De_Almacen.Properties.Resources.Gemini_Generated_Image_kdndzqkdndzqkdnd1;
-            this.pnlContenedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContenedor.Location = new System.Drawing.Point(128, 0);
-            this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(915, 622);
-            this.pnlContenedor.TabIndex = 4;
-            this.pnlContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContent_Paint);
             // 
             // btnEliminarProducto
             // 
@@ -164,11 +153,22 @@
             this.btnActualizarProducto.UseVisualStyleBackColor = true;
             this.btnActualizarProducto.Click += new System.EventHandler(this.btnActualizarProducto_Click);
             // 
+            // pnlContenedor
+            // 
+            this.pnlContenedor.BackgroundImage = global::Sistema_De_Almacen.Properties.Resources.Gemini_Generated_Image_kdndzqkdndzqkdnd1;
+            this.pnlContenedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContenedor.Location = new System.Drawing.Point(128, 0);
+            this.pnlContenedor.Name = "pnlContenedor";
+            this.pnlContenedor.Size = new System.Drawing.Size(922, 622);
+            this.pnlContenedor.TabIndex = 4;
+            this.pnlContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContent_Paint);
+            // 
             // btnActualizarProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1043, 622);
+            this.ClientSize = new System.Drawing.Size(1050, 622);
             this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.panelSidebar);
             this.IsMdiContainer = true;
