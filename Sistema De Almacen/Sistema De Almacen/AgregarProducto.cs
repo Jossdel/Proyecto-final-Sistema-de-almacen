@@ -190,7 +190,7 @@ namespace Sistema_De_Almacen
             }
 
             // Verificar que el ID no se repita
-            if (FrmPrincipal.listaProductos.Any(p => p.ID == txtID.Text))
+          
             {
                 MessageBox.Show("El ID ya existe. Se generará otro automáticamente.");
                 txtID.Text = GenerarID();
@@ -213,9 +213,9 @@ namespace Sistema_De_Almacen
 
             var producto = new Producto
             {
-                ID = txtID.Text,
-                Nombre = txtNombre.Text,
-                Categoria = txtCategoria.Text,
+    
+              
+                
                 Necesidad = cmbNecesidad.SelectedItem.ToString(),
                 Cantidad = cantidad,
                 PrecioUnidad = precio,
@@ -224,7 +224,7 @@ namespace Sistema_De_Almacen
                 Estado = estado
             };
 
-            FrmPrincipal.listaProductos.Add(producto);
+           
             MessageBox.Show("Producto guardado correctamente.");
 
             txtEstado.Text = estado;

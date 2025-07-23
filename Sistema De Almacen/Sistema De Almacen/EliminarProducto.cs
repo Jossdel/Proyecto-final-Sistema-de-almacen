@@ -18,7 +18,7 @@ namespace Sistema_De_Almacen
             string id = txtID.Text.Trim();
 
             // Buscar producto por ID
-            productoSeleccionado = FrmPrincipal.listaProductos
+            productoSeleccionado = btnActualizarProductos.listaProductos
                 .FirstOrDefault(p => p.ID.Equals(id, StringComparison.OrdinalIgnoreCase));
 
             if (productoSeleccionado != null)
@@ -49,7 +49,7 @@ namespace Sistema_De_Almacen
 
             if (confirmacion == DialogResult.Yes)
             {
-                FrmPrincipal.listaProductos.Remove(productoSeleccionado);
+                btnActualizarProductos.listaProductos.Remove(productoSeleccionado);
                 MessageBox.Show("Producto eliminado correctamente.");
                 LimpiarCampos();
             }
@@ -68,6 +68,11 @@ namespace Sistema_De_Almacen
         }
 
         private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EliminarProducto_Load(object sender, EventArgs e)
         {
 
         }

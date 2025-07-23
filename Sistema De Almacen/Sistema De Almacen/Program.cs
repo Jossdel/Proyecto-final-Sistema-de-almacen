@@ -16,7 +16,7 @@ namespace Sistema_De_Almacen
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmPrincipal());
+            Application.Run(new btnActualizarProductos());
         }
     }
 }

@@ -91,6 +91,42 @@
     <Compile Include="Salir.Designer.cs">
       <DependentUpon>Salir.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_ActualizarProducto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ActualizarProducto.Designer.cs">
+      <DependentUpon>UC_ActualizarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_AgregarProducto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_AgregarProducto.Designer.cs">
+      <DependentUpon>UC_AgregarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_EliminarProducto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_EliminarProducto.Designer.cs">
+      <DependentUpon>UC_EliminarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ExportarDatos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ExportarDatos.Designer.cs">
+      <DependentUpon>UC_ExportarDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_MostrarProducto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_MostrarProducto.Designer.cs">
+      <DependentUpon>UC_MostrarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Salir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Salir.Designer.cs">
+      <DependentUpon>UC_Salir.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ActualizarProducto.resx">
       <DependentUpon>ActualizarProducto.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EliminarProducto.resx">
       <DependentUpon>EliminarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExportarDatos.resx">
+      <DependentUpon>ExportarDatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -118,6 +157,24 @@
     </Compile>
     <EmbeddedResource Include="Salir.resx">
       <DependentUpon>Salir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ActualizarProducto.resx">
+      <DependentUpon>UC_ActualizarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_AgregarProducto.resx">
+      <DependentUpon>UC_AgregarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_EliminarProducto.resx">
+      <DependentUpon>UC_EliminarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ExportarDatos.resx">
+      <DependentUpon>UC_ExportarDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_MostrarProducto.resx">
+      <DependentUpon>UC_MostrarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Salir.resx">
+      <DependentUpon>UC_Salir.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -155,6 +212,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\id-del-paciente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lifecycle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agotado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar-sesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\investigacion-de-productos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar-producto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_kdndzqkdndzqkdnd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_kdndzqkdndzqkdnd1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_1godj01godj01god.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
