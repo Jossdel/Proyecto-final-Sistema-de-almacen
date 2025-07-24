@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Sistema_De_Almacen
 {
-    public partial class btnActualizarProductos : Form
+    public partial class FrmPrincipal : Form
     {
-        public btnActualizarProductos()
+        public FrmPrincipal()
         {
             InitializeComponent();
         }
@@ -67,69 +67,6 @@ namespace Sistema_De_Almacen
         {
             Salir salirForm = new Salir();
             salirForm.ShowDialog(); // Se abre el formulario "Salir" como emergente (modal)
-        }
-        private void MostrarUserControl(UserControl userControl)
-        {
-            pnlContenedor.Controls.Clear();
-            userControl.Dock = DockStyle.Fill;
-            pnlContenedor.Controls.Add(userControl);
-        }
-        private void btnMostrarProductos_Click(object sender, EventArgs e)
-        {
-            MostrarUserControl(new UC_MostrarProducto());
-        }
-
-        private void btnAgregarproductos_Click(object sender, EventArgs e)
-        {
-            MostrarUserControl(new UC_AgregarProducto());
-        }
-
-        private void panelContent_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnExportarDatos_Click(object sender, EventArgs e)
-        {
-            // Lógica de exportación directa aquí
-            using (SaveFileDialog sfd = new SaveFileDialog())
-            {
-                sfd.Filter = "Archivos de Excel (*.xlsx)|*.xlsx|Todos los archivos (*.*)|*.*";
-                sfd.FileName = "Productos_Exportados_" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".xlsx";
-
-                if (sfd.ShowDialog() == DialogResult.OK)
-                {
-                    try
-                    {
-                        // Aquí iría el código real para tomar btnActualizarProductos.listaProductos
-                        // y escribirlo en el archivo sfd.FileName
-                        // Por ejemplo:
-                        // ExcelExporter.ExportarListaAExcel(btnActualizarProductos.listaProductos, sfd.FileName);
-
-                        MessageBox.Show("Datos exportados correctamente a:\n" + sfd.FileName, "Exportación Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Error al exportar los datos: " + ex.Message, "Error de Exportación", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
-            }
-        }
-
-        private void btnActualizarProducto_Click(object sender, EventArgs e)
-        {
-            MostrarUserControl(new UC_ActualizarProducto());
-        }
-
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            Salir salirForm = new Salir();
-            salirForm.ShowDialog();
-        }
-
-        private void btnEliminarProducto_Click(object sender, EventArgs e)
-        {
-            MostrarUserControl(new UC_EliminarProducto());
         }
     }
 }

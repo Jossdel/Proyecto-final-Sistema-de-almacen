@@ -28,18 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // ExportarDatos
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "ExportarDatos";
             this.Text = "ExportarDatos";
-            this.Load += new System.EventHandler(this.ExportarDatos_Load);
-            this.ResumeLayout(false);
-
         }
 
         #endregion

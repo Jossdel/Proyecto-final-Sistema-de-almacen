@@ -16,10 +16,5 @@ namespace Sistema_De_Almacen
         {
             InitializeComponent();
         }
-
-        private void ExportarDatos_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
