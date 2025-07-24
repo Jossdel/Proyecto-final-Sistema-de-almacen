@@ -38,12 +38,25 @@
             // 
             // label1
             // 
+
             this.label1.AutoSize = true;
+
             this.label1.Location = new System.Drawing.Point(745, 130);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(36, 29);
+
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(33, 91);
+
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Image = global::Sistema_De_Almacen.Properties.Resources.id_del_paciente;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.Location = new System.Drawing.Point(14, 91);
+            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+
             this.label1.TabIndex = 0;
             this.label1.Text = "ID";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
@@ -58,14 +71,26 @@
             // txtID
             // 
             this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+
             this.txtID.Location = new System.Drawing.Point(875, 127);
+
+
+            this.txtID.Location = new System.Drawing.Point(76, 89);
+
+            this.txtID.Location = new System.Drawing.Point(179, 91);
+
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(424, 35);
             this.txtID.TabIndex = 3;
             // 
             // btnBuscar
             // 
+
             this.btnBuscar.Location = new System.Drawing.Point(1328, 108);
+            this.btnBuscar.Location = new System.Drawing.Point(411, 85);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(1);
+
+
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(151, 72);
             this.btnBuscar.TabIndex = 4;
@@ -76,7 +101,14 @@
             // txtNombre
             // 
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+
             this.txtNombre.Location = new System.Drawing.Point(938, 444);
+            this.txtNombre.Location = new System.Drawing.Point(162, 174);
+
+
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(1);
+
+
             this.txtNombre.Multiline = true;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.ReadOnly = true;
@@ -105,6 +137,10 @@
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+
+
+            this.Margin = new System.Windows.Forms.Padding(1);
+
             this.Name = "EliminarProducto";
             this.Text = "EliminarProducto";
             this.ResumeLayout(false);
