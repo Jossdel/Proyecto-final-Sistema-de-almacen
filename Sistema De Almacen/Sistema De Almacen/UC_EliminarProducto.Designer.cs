@@ -112,12 +112,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Sistema_De_Almacen.Properties.Resources.Gemini_Generated_Image_1godj01godj01god;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
             this.Name = "UC_EliminarProducto";
             this.Size = new System.Drawing.Size(736, 507);
             this.Load += new System.EventHandler(this.UC_EliminarProducto_Load);
