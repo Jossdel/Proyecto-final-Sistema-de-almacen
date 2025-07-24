@@ -40,21 +40,20 @@
             this.dgvProductos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvProductos.GridColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dgvProductos.Location = new System.Drawing.Point(0, 0);
-            this.dgvProductos.Margin = new System.Windows.Forms.Padding(1);
+            this.dgvProductos.Margin = new System.Windows.Forms.Padding(2);
             this.dgvProductos.Name = "dgvProductos";
             this.dgvProductos.RowHeadersWidth = 92;
             this.dgvProductos.RowTemplate.Height = 37;
-            this.dgvProductos.Size = new System.Drawing.Size(880, 497);
+            this.dgvProductos.Size = new System.Drawing.Size(1940, 1112);
             this.dgvProductos.TabIndex = 0;
-            this.dgvProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProductos_CellContentClick);
             // 
             // MostrarProducto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(880, 497);
+            this.ClientSize = new System.Drawing.Size(1940, 1112);
             this.Controls.Add(this.dgvProductos);
-            this.Margin = new System.Windows.Forms.Padding(1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MostrarProducto";
             this.Text = "MostrarProducto";
             this.Load += new System.EventHandler(this.MostrarProducto_Load);

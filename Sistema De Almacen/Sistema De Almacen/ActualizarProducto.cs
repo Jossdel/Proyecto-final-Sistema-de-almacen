@@ -23,7 +23,7 @@ namespace Sistema_De_Almacen
         {
             string id = txtID.Text.Trim();
 
-            productoEncontrado = btnActualizarProductos.listaProductos
+            productoEncontrado = FrmPrincipal.listaProductos
                 .FirstOrDefault(p => p.ID.Equals(id, StringComparison.OrdinalIgnoreCase));
 
             if (productoEncontrado != null)

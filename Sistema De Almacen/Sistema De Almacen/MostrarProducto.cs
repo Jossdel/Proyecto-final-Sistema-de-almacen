@@ -17,7 +17,7 @@ namespace Sistema_De_Almacen
             // Carga la lista de productos al DataGri
             // dView
             dgvProductos.DataSource = null;
-            dgvProductos.DataSource = btnActualizarProductos.listaProductos;
+            dgvProductos.DataSource = FrmPrincipal.listaProductos;
         }
 
 
@@ -27,9 +27,6 @@ namespace Sistema_De_Almacen
             this.Close();
         }
 
-        private void dgvProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+  
     }
 }
