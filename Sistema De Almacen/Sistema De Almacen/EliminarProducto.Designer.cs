@@ -27,26 +27,46 @@
             // 
             // label1
             // 
+<<<<<<< Updated upstream
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(33, 91);
+=======
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Image = global::Sistema_De_Almacen.Properties.Resources.id_del_paciente;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.Location = new System.Drawing.Point(14, 91);
+            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+>>>>>>> Stashed changes
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(28, 20);
+            this.label1.Size = new System.Drawing.Size(150, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtID
             // 
             this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+<<<<<<< Updated upstream
             this.txtID.Location = new System.Drawing.Point(76, 89);
+=======
+            this.txtID.Location = new System.Drawing.Point(179, 91);
+            this.txtID.Margin = new System.Windows.Forms.Padding(1);
+>>>>>>> Stashed changes
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(200, 20);
             this.txtID.TabIndex = 3;
             // 
             // btnBuscar
             // 
+<<<<<<< Updated upstream
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnBuscar.Location = new System.Drawing.Point(283, 81);
+=======
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(411, 85);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(1);
+>>>>>>> Stashed changes
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(90, 32);
             this.btnBuscar.TabIndex = 4;
@@ -58,6 +78,10 @@
             // 
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNombre.Location = new System.Drawing.Point(162, 174);
+<<<<<<< Updated upstream
+=======
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(1);
+>>>>>>> Stashed changes
             this.txtNombre.Multiline = true;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.ReadOnly = true;
@@ -104,6 +128,10 @@
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+<<<<<<< Updated upstream
+=======
+            this.Margin = new System.Windows.Forms.Padding(1);
+>>>>>>> Stashed changes
             this.Name = "EliminarProducto";
             this.Text = "EliminarProducto";
             this.Load += new System.EventHandler(this.EliminarProducto_Load);
