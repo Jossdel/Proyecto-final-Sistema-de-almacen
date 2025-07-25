@@ -50,9 +50,10 @@
             this.panelSidebar.Controls.Add(this.btnActualizarProducto);
             this.panelSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSidebar.Location = new System.Drawing.Point(0, 0);
-            this.panelSidebar.MaximumSize = new System.Drawing.Size(200, 0);
+            this.panelSidebar.Margin = new System.Windows.Forms.Padding(7);
+            this.panelSidebar.MaximumSize = new System.Drawing.Size(467, 0);
             this.panelSidebar.Name = "panelSidebar";
-            this.panelSidebar.Size = new System.Drawing.Size(128, 622);
+            this.panelSidebar.Size = new System.Drawing.Size(299, 1748);
             this.panelSidebar.TabIndex = 3;
             // 
             // btnEliminarProducto
@@ -62,9 +63,10 @@
             this.btnEliminarProducto.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarProducto.ForeColor = System.Drawing.Color.White;
             this.btnEliminarProducto.Image = global::Sistema_De_Almacen.Properties.Resources.agotado;
-            this.btnEliminarProducto.Location = new System.Drawing.Point(0, 359);
+            this.btnEliminarProducto.Location = new System.Drawing.Point(7, 763);
+            this.btnEliminarProducto.Margin = new System.Windows.Forms.Padding(7);
             this.btnEliminarProducto.Name = "btnEliminarProducto";
-            this.btnEliminarProducto.Size = new System.Drawing.Size(128, 104);
+            this.btnEliminarProducto.Size = new System.Drawing.Size(299, 196);
             this.btnEliminarProducto.TabIndex = 3;
             this.btnEliminarProducto.Text = "Eliminar Producto";
             this.btnEliminarProducto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -79,9 +81,10 @@
             this.btnMostrarProductos.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMostrarProductos.ForeColor = System.Drawing.Color.White;
             this.btnMostrarProductos.Image = global::Sistema_De_Almacen.Properties.Resources.package__1_;
-            this.btnMostrarProductos.Location = new System.Drawing.Point(0, 122);
+            this.btnMostrarProductos.Location = new System.Drawing.Point(0, 246);
+            this.btnMostrarProductos.Margin = new System.Windows.Forms.Padding(7);
             this.btnMostrarProductos.Name = "btnMostrarProductos";
-            this.btnMostrarProductos.Size = new System.Drawing.Size(128, 111);
+            this.btnMostrarProductos.Size = new System.Drawing.Size(299, 257);
             this.btnMostrarProductos.TabIndex = 0;
             this.btnMostrarProductos.Text = "Mostrar Productos";
             this.btnMostrarProductos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -97,8 +100,9 @@
             this.btnAgregarproductos.ForeColor = System.Drawing.Color.White;
             this.btnAgregarproductos.Image = global::Sistema_De_Almacen.Properties.Resources.add_product;
             this.btnAgregarproductos.Location = new System.Drawing.Point(0, 0);
+            this.btnAgregarproductos.Margin = new System.Windows.Forms.Padding(7);
             this.btnAgregarproductos.Name = "btnAgregarproductos";
-            this.btnAgregarproductos.Size = new System.Drawing.Size(128, 122);
+            this.btnAgregarproductos.Size = new System.Drawing.Size(299, 246);
             this.btnAgregarproductos.TabIndex = 1;
             this.btnAgregarproductos.Text = "Agregar Productos";
             this.btnAgregarproductos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -112,9 +116,10 @@
             this.btnSalir.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
             this.btnSalir.Image = global::Sistema_De_Almacen.Properties.Resources.cerrar_sesion;
-            this.btnSalir.Location = new System.Drawing.Point(-6, 551);
+            this.btnSalir.Location = new System.Drawing.Point(-7, 1155);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(7);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(134, 71);
+            this.btnSalir.Size = new System.Drawing.Size(313, 158);
             this.btnSalir.TabIndex = 5;
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -128,9 +133,10 @@
             this.btnExportarDatos.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExportarDatos.ForeColor = System.Drawing.Color.White;
             this.btnExportarDatos.Image = global::Sistema_De_Almacen.Properties.Resources.subir;
-            this.btnExportarDatos.Location = new System.Drawing.Point(0, 469);
+            this.btnExportarDatos.Location = new System.Drawing.Point(7, 972);
+            this.btnExportarDatos.Margin = new System.Windows.Forms.Padding(7);
             this.btnExportarDatos.Name = "btnExportarDatos";
-            this.btnExportarDatos.Size = new System.Drawing.Size(128, 74);
+            this.btnExportarDatos.Size = new System.Drawing.Size(299, 165);
             this.btnExportarDatos.TabIndex = 4;
             this.btnExportarDatos.Text = "Exportar Datos";
             this.btnExportarDatos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -144,9 +150,10 @@
             this.btnActualizarProducto.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizarProducto.ForeColor = System.Drawing.Color.White;
             this.btnActualizarProducto.Image = global::Sistema_De_Almacen.Properties.Resources.lifecycle;
-            this.btnActualizarProducto.Location = new System.Drawing.Point(0, 239);
+            this.btnActualizarProducto.Location = new System.Drawing.Point(-7, 517);
+            this.btnActualizarProducto.Margin = new System.Windows.Forms.Padding(7);
             this.btnActualizarProducto.Name = "btnActualizarProducto";
-            this.btnActualizarProducto.Size = new System.Drawing.Size(128, 114);
+            this.btnActualizarProducto.Size = new System.Drawing.Size(299, 252);
             this.btnActualizarProducto.TabIndex = 2;
             this.btnActualizarProducto.Text = "Actualizar Producto";
             this.btnActualizarProducto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -158,21 +165,22 @@
             this.pnlContenedor.BackgroundImage = global::Sistema_De_Almacen.Properties.Resources.Gemini_Generated_Image_kdndzqkdndzqkdnd1;
             this.pnlContenedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContenedor.Location = new System.Drawing.Point(128, 0);
+            this.pnlContenedor.Location = new System.Drawing.Point(299, 0);
+            this.pnlContenedor.Margin = new System.Windows.Forms.Padding(7);
             this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(922, 622);
+            this.pnlContenedor.Size = new System.Drawing.Size(2151, 1748);
             this.pnlContenedor.TabIndex = 4;
             this.pnlContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContent_Paint);
             // 
             // btnActualizarProductos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1050, 622);
+            this.ClientSize = new System.Drawing.Size(2450, 1748);
             this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.panelSidebar);
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "btnActualizarProductos";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

@@ -15,6 +15,7 @@ namespace Sistema_De_Almacen
         public btnActualizarProductos()
         {
             InitializeComponent();
+
         }
 
         public static List<Producto> listaProductos = new List<Producto>();
@@ -24,6 +25,7 @@ namespace Sistema_De_Almacen
         private void Form1_Load(object sender, EventArgs e)
         {
             this.IsMdiContainer = true;
+       
         }
 
         private void agregarProductosToolStripMenuItem_Click(object sender, EventArgs e)
